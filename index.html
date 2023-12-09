@@ -16,7 +16,16 @@
 
 	<div class="homePage">
 	<h1>Home Page</h1>
+	<div class="button">
+	<button onclick="openLink(this)" value="usless.html">Click Me!</button>
+	</div>
 	<p> Thank you for checking out my page! Linked above are About Me and Resume that lead to their respective name. </p>
 	</div>
+	<script>
+		function openLink(link){
+			console.log(link)
+			location.href ='useless.html'
+		};
+	</script>
 </body>
 </html>

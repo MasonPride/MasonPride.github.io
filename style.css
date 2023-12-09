@@ -61,6 +61,11 @@ body{
 	padding-bottom: 10px;
 }
 
+.button {
+	text-align: center;
+	
+  }
+
 .resume{
 	padding-left:50px;
 }
