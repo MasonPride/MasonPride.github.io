@@ -1,31 +1,42 @@
 <!DOCTYPE html>
-<html lang="en-us">
+<html lang="en">
 <head>
-    <title>Home Page</title>
-		<link rel="stylesheet" href="style.css">
-  </head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Name - Personal Website</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
 
+</head>
 <body>
-	<div class="nav">
-		<ul>
-			<li><a href="index.html">Home</a></li>
-			<li><a href="aboutme.html">About Me</a></li>
-			<li><a href="resume.html">Resume</a></li>
-		</ul>
-	</div>
+    
+    <header>
+        <h1>Mason Pride</h1>
+        <p>Web Developer | Designer</p>
+    </header>
+    <!-- add headshot picture here -->
+    <!--<div style="text-align: center;">
+        <img src="MeDefault.jpg" alt="Mason Pride" class="portrait">
+        </div>
+    -->
+    <nav>
+        <a href="https://www.linkedin.com/in/mason-pride-a705722a4" target="_blank"><i class="fab fa-linkedin"></i></a>
+        <a href="https://github.com/MasonPride?tab=repositories" target="_blank"><i class="fab fa-github"></i></a>
+    </nav>
+    <section>
+        <h2>About Me</h2>
+        <p>Welcome to my personal website. I'm passionate about creating web experiences that are both functional and visually appealing. Feel free to explore and learn more about my work.</p>
+    </section>
 
-	<div class="homePage">
-	<h1>Home Page</h1>
-	<div class="button">
-	<button onclick="openLink(this)" value="usless.html">Click Me!</button>
-	</div>
-	<p> Thank you for checking out my page! Linked above are About Me and Resume that lead to their respective name. </p>
-	</div>
-	<script>
-		function openLink(link){
-			console.log(link)
-			location.href ='useless.html'
-		};
-	</script>
+    <section>
+        <h2>Projects</h2>
+        <p>Check out some of my recent projects below:</p>
+    </section>
+
+    
+    <footer>
+        <p>&copy; 2023 Mason Pride. All rights reserved.</p>
+    </footer>
+
 </body>
 </html>

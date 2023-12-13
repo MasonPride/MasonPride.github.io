@@ -1,71 +1,58 @@
-
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
-
-body{
-	font-family: 'Roboto', sans-serif;
-}
-.nav ul{
-	list-style: none;
-	background: #bdb8d7;
-	padding:0;
-	margin: 0;
-	text-align: center;
-	
-}
-.nav a{
-	color: #fff;
-	width:100px;
-	display:block;
-	padding: 10px;
-	font-size: 18px;
-	text-align: center;
-	text-transform: uppercase;
-	font-weight: bold;
-}
-.nav a:hover{
-	background-color: #8379b4; 
-}
-.nav li{
-	display: inline-block;
+body {
+    font-family: 'Hack', monospace;
+    background-color: #222;
+    color: #ccc;
+    margin: 0;
+    padding: 0;
 }
 
-
-.aboutMe{
-	border-bottom: solid 1px;
-}
-.aboutMe p{
-	display: inline-block;
-	margin-left: 40px;
-	margin-right: 40px;
-	flex-wrap: wrap;
-	align-items: center;
+header {
+    background-color: #222;
+    padding: 1em;
+    text-align: center;
 }
 
-.tab{
-	display: inline-block;
-	margin-left: 40px;
+nav {
+    text-align: center;
+    background-color: #222;
+    padding: .75em;
 }
 
-.homePage{
-	border-bottom: solid 1px;
+nav a {
+    color: #ccc;
+    text-decoration: none;
+    margin: 0 1em;
+    font-size: 2em;
 }
 
-.homePage h1{
-	text-align: center;
-	text-transform: uppercase;
+nav a:hover {
+    color: #fff;
 }
 
-.homePage p{
-	text-align: center;
-	padding-top: 70px;
-	padding-bottom: 10px;
+section {
+    max-width: 1200px;
+    margin: 2em auto;
+    padding: 1em;
+    background-color: #444;
+    border-radius: 8px;
 }
 
-.button {
-	text-align: center;
-	
-  }
+h1, h2 {
+    color: #ddd;
+}
 
-.resume{
-	padding-left:50px;
+p {
+    line-height: 1.5;
+}
+
+footer {
+    text-align: center;
+    padding: 1em;
+    background-color: #222;
+}
+
+.portrait {
+    max-width: 10%;
+    border-radius: 5%;
+    margin-bottom: 1em;
 }
