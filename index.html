@@ -1,47 +1,152 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mason Pride - Portfolio Website</title>
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
-
-</head>
-<body>
-    
-    <header>
-        <h1>Mason Pride</h1>
-        <p>Web Developer | Designer</p>
-    </header>
-    <!--<div style="text-align: center;">
-        <img src="MeDefault.jpg" alt="Mason Pride" class="portrait">
-        </div>
-    -->
-    <nav>
-        <a href="https://www.linkedin.com/in/mason-pride-a705722a4" target="_blank"><i class="fab fa-linkedin"></i></a>
-        <a href="https://github.com/MasonPride?tab=repositories" target="_blank"><i class="fab fa-github"></i></a>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mason Pride | Portfolio</title>
+    <link rel="stylesheet" href="style.css" />
+    <script defer src="script.js"></script>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <script
+      src="https://kit.fontawesome.com/a076d05399.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <nav class="navbar">
+      <div class="logo">Mason Pride</div>
+      <ul class="nav-links">
+        <li><a href="#about">About</a></li>
+        <li><a href="#skills-experience">Experience</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
     </nav>
-    <section>
+    <header class="hero-section">
+      <div class="hero-content">
+        <div class="hero-image">
+          <img src="./assets/profile-placeholder.png" alt="Mason Pride" />
+        </div>
+        <div class="hero-text">
+          <p class="intro">Hello, I'm</p>
+          <h1 class="name">Mason Pride</h1>
+          <p class="title">Developer · IT Technician</p>
+          <div class="hero-buttons">
+            <a href="resume.pdf" class="btn-outline" target="_blank"
+              >Download CV</a
+            >
+            <a href="#contact" class="btn-outline">Contact Info</a>
+          </div>
+          <div id="socials-container">
+            <img
+              src="./assets/linkedin.png"
+              alt="My LinkedIn profile"
+              class="icon"
+              onclick="location.href='https://linkedin.com/in/masonpride'"
+            />
+            <img
+              src="./assets/github.png"
+              alt="My Github profile"
+              class="icon"
+              onclick="location.href='https://github.com/MasonPride'"
+            />
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <section id="about" class="section">
         <h2>About Me</h2>
-        <p>Welcome to my personal website. I'm passionate about creating web experiences that are both functional and visually appealing. Feel free to explore and learn more about my work.</p>
-    </section>
-
-    <section>
-        <h2>Projects</h2>
-        <p>Check out some of my recent projects below:</p>
-
-        <h4><a href="https://www.masonpride.online/WeatherApp/" target="_blank">Weather App</a></h4>
-        <p>This is a small weather web application that uses an API to get the weather and other information for a certain area.
-            It also uses an API to get the useres current location (longitude and latitiude) and then plugs it into the open weather API.
+        <p>
+          Hi, I’m Mason — a passionate developer and creative thinker graduating
+          from Kansas State University in May 2025 with a degree in
+          <a href="https://www.cs.ksu.edu/">Integrated Computer Science</a> and
+          a minor in
+          <a
+            href="https://art.ksu.edu/academics/curricular-areas/graphicdesign.html"
+            >Graphic Design.</a
+          >
         </p>
+        <p>
+          Currently, I work as an IT Helpdesk Support Specialist for the College
+          of Veterinary Medicine at K-State, where I assist faculty, staff, and
+          students with technical issues ranging from hardware troubleshooting
+          to software installations and system maintenance. This role has helped
+          me sharpen my problem-solving skills and grow comfortable supporting a
+          wide variety of users.
+        </p>
+        <p>
+          My academic and professional journey has been focused on blending
+          design thinking with technical expertise. I enjoy working across the
+          full stack, building web applications that are both functional and
+          visually engaging. My background in graphic design also gives me an
+          eye for clean UI/UX design.
+        </p>
+        <p>
+          Outside of tech, I’m big on health and fitness — whether it’s hitting
+          the gym, working out, or just staying active. It’s a great way for me
+          to recharge and stay focused. I'm always looking for ways to grow,
+          both professionally and personally, and I’m excited about where this
+          journey in tech will take me.
+        </p>
+      </section>
 
-    </section>
+      <section id="skills-experience" class="section">
+        <h2>Skills & Experience</h2>
+        <div class="skills-experience-grid">
+          <div class="skills">
+            <h3>Skills</h3>
 
-    
-    <footer>
-        <p>&copy; 2023 Mason Pride. All rights reserved.</p>
-    </footer>
+            <h4>Front-End</h4>
+            <ul>
+              <li>HTML5, CSS3</li>
+              <li>JavaScript (ES6+), React.js</li>
+              <li>Responsive & Accessible Design</li>
+            </ul>
 
-</body>
+            <h4>Back-End</h4>
+            <ul>
+              <li>Node.js, Express.js</li>
+              <li>Flask (Python)</li>
+              <li>RESTful APIs, CRUD operations</li>
+              <li>SQL (PostgreSQL, SQLite)</li>
+            </ul>
+
+            <h4>Tools & Others</h4>
+            <ul>
+              <li>Git & GitHub</li>
+              <li>Figma, Adobe Illustrator</li>
+              <li>Agile/Scrum practices</li>
+            </ul>
+          </div>
+
+          <div class="experience">
+            <h3>Experience</h3>
+            <p>
+              <strong>IT Help Desk - K-State Vet Med</strong><br />
+              Supporting faculty and staff with tech issues, troubleshooting
+              hardware/software problems, and maintaining systems.
+            </p>
+
+            <p>
+              <strong>Full-Stack Projects</strong><br />
+              Developed applications using Node.js, Express, SQLite, and React.
+              Designed intuitive UIs and implemented complete CRUD
+              functionality.
+            </p>
+
+            <p>
+              <strong>Education</strong><br />
+              B.S. Integrated Computer Science, Minor in Graphic Design<br />
+              Kansas State University, Graduating May 2025
+            </p>
+          </div>
+        </div>
+      </section>
+    </main>
+  </body>
 </html>
